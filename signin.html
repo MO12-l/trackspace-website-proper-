@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — TrackSpace</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">TrackSpace</a>
+    <a class="text-link" href="index.html">Back to home</a>
+  </header>
+
+  <main class="signin-wrap">
+    <section class="signin-card">
+      <p class="eyebrow">Welcome back</p>
+      <h1>Sign in to TrackSpace</h1>
+      <p class="muted">Enter your details to continue.</p>
+
+      <form id="signin-form">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email"
+               placeholder="you@example.com" autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"
+               placeholder="Enter your password"
+               autocomplete="current-password" required>
+
+        <button class="button full-width" type="submit">Sign in</button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+
+      <p class="small-print">
+        This is a visual demo. Sign-in won’t work until authentication is added.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 TrackSpace</footer>
+</body>
+</html>
